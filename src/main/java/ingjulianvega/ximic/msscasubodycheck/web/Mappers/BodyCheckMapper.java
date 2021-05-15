@@ -1,7 +1,9 @@
 package ingjulianvega.ximic.msscasubodycheck.web.Mappers;
 
 
+import ingjulianvega.ximic.events.UpdateBodyCheckEvent;
 import ingjulianvega.ximic.msscasubodycheck.domain.BodyCheckEntity;
+import ingjulianvega.ximic.msscasubodycheck.web.model.BodyCheck;
 import ingjulianvega.ximic.msscasubodycheck.web.model.BodyCheckDto;
 import org.mapstruct.Mapper;
 
@@ -15,4 +17,6 @@ public interface BodyCheckMapper {
     BodyCheckEntity bodyCheckDtoToBodyCheckEntity(BodyCheckDto bodyCheckDto);
 
     ArrayList<BodyCheckDto> bodyCheckEntityListToBodyCheckDtoList(List<BodyCheckEntity> bodyCheckEntityList);
+
+    BodyCheck updateBodyCheckEventToBodyCheck(UpdateBodyCheckEvent updateBodyCheckEvent);
 }

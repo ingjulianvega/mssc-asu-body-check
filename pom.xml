@@ -19,7 +19,6 @@
 		<docker.image.prefix>ingjulianvega</docker.image.prefix>
 		<!--Set to name of project-->
 		<docker.image.name>mssc-asu-body-check</docker.image.name>
-
 	</properties>
 
 	<build>
