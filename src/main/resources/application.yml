@@ -24,7 +24,7 @@ spring:
       config: classpath:ehcache.xml
   #Zipkin
   zipkin:
-    enabled: false
+    baseUrl: http://localhost:9411/
   #ActiveMQ
   activemq:
     broker-url: tcp://localhost:61616
@@ -60,6 +60,10 @@ spring:
         qos-enabled: true
         receive-timeout: 1000
         time-to-live: 36000
+  sleuth:
+    messaging:
+      jms:
+        enabled: false
 #General configuration
 server:
   port: 8103
