@@ -76,6 +76,11 @@ logging:
 #Exceptions
 body-check:
   success: The operation was successful.
-  prefix: 'API-BDCK:'
+  prefix: 'BODY-CHECK'
   error:
     general: There was an unexpected error. Please try again.
+#Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://netflix:eureka@localhost:8761/eureka
